@@ -42,7 +42,7 @@ export async function createDonation(formData: FormData): Promise<string|false> 
     });
 
     return response.data.result.url;
-  } catch (e) {
+  } catch (e:any) {
     if (axios.isAxiosError(e) && e.response) {
       console.log(e.response.status);
       console.log(e.response.data);
