@@ -76,7 +76,7 @@ export default async function SingleProfilePage({params}:Props) {
             {donations.length && (
               <div className="mt-2">
                 {donations.map(donation => (
-                  <div key={donation.email} className="py-2">
+                  <div className="py-2">
                     <h3>
                       <span className="font-semibold">{donation.name}</span>
                       {' '}
